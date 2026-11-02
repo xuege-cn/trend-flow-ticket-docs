@@ -3,16 +3,16 @@ import { defineConfig } from "vitepress";
 export default defineConfig({
     lang: "zh-CN",
     title: "个人知识库",
-    description: "趋势交易笔记与广进计划话术",
+    description: "投资理财笔记与广进计划话术",
     base: process.env.BASE_PATH ?? "/",
     cleanUrls: true,
     lastUpdated: true,
     themeConfig: {
         nav: [
             {
-                text: "趋势交易",
+                text: "投资理财",
                 items: [
-                    { text: "分析指南", link: "/如何分析成交量" },
+                    { text: "笔记总览", link: "/投资理财/" },
                     { text: "量化模型", link: "/量化模型/量化模型" }
                 ]
             },
@@ -141,38 +141,48 @@ export default defineConfig({
                     ]
                 }
             ],
-            "/": [
+            "/投资理财/": [
                 {
-                    text: "趋势交易 · 量能分析",
+                    text: "投资理财 · 量能分析",
                     items: [
-                        { text: "成交量分析", link: "/如何分析成交量" },
-                        { text: "量比分析", link: "/如何分析量比" },
-                        { text: "换手率分析", link: "/如何分析换手率" },
+                        { text: "总览", link: "/投资理财/" },
+                        { text: "成交量分析", link: "/投资理财/如何分析成交量" },
+                        { text: "量比分析", link: "/投资理财/如何分析量比" },
+                        { text: "换手率分析", link: "/投资理财/如何分析换手率" },
                         {
                             text: "分时量能看强弱",
-                            link: "/如何通过分时量能看强弱"
+                            link: "/投资理财/如何通过分时量能看强弱"
                         }
                     ]
                 },
                 {
-                    text: "趋势交易 · 主力行为与强弱转换",
+                    text: "投资理财 · 主力行为与强弱转换",
                     items: [
                         {
                             text: "早盘竞价判断抢筹",
-                            link: "/如何通过早盘竞价量能判断主力抢筹"
+                            link: "/投资理财/如何通过早盘竞价量能判断主力抢筹"
                         },
                         {
                             text: "识别主力吸筹与抢筹",
-                            link: "/如何识别主力吸筹和抢筹"
+                            link: "/投资理财/如何识别主力吸筹和抢筹"
                         },
                         {
                             text: "判断个股弱转强",
-                            link: "/如何判断个股弱转强"
+                            link: "/投资理财/如何判断个股弱转强"
                         }
                     ]
                 },
                 {
-                    text: "趋势交易 · 量化模型",
+                    text: "投资理财 · 日内操作",
+                    items: [
+                        {
+                            text: "如何日内做 T",
+                            link: "/投资理财/如何日内做 T"
+                        }
+                    ]
+                },
+                {
+                    text: "投资理财 · 量化模型",
                     items: [
                         { text: "弱转强量化模型", link: "/量化模型/量化模型" },
                         {
@@ -180,6 +190,22 @@ export default defineConfig({
                             link: "/量化模型/同花顺弱转强选股公式方案"
                         }
                     ]
+                }
+            ],
+            "/量化模型/": [
+                {
+                    text: "投资理财 · 量化模型",
+                    items: [
+                        { text: "弱转强量化模型", link: "/量化模型/量化模型" },
+                        {
+                            text: "同花顺选股公式方案",
+                            link: "/量化模型/同花顺弱转强选股公式方案"
+                        }
+                    ]
+                },
+                {
+                    text: "返回投资理财",
+                    items: [{ text: "笔记总览", link: "/投资理财/" }]
                 }
             ]
         },
