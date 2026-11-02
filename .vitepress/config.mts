@@ -173,11 +173,15 @@ export default defineConfig({
                     ]
                 },
                 {
-                    text: "投资理财 · 日内操作",
+                    text: "投资理财 · 操作策略",
                     items: [
                         {
                             text: "如何日内做 T",
                             link: "/投资理财/如何日内做 T"
+                        },
+                        {
+                            text: "如何做波段",
+                            link: "/投资理财/如何做波段"
                         }
                     ]
                 },
