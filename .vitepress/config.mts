@@ -29,6 +29,18 @@ export default defineConfig({
                         link: "/研究报告/2026—2027年A股猪周期投资研究报告"
                     },
                     {
+                        text: "潜力股筛选 · ChatGPT",
+                        link: "/研究报告/2027年猪周期潜力股筛选报告-ChatGPT"
+                    },
+                    {
+                        text: "潜力股筛选 · Deepseek",
+                        link: "/研究报告/2027年猪周期潜力股筛选报告-Deepseek"
+                    },
+                    {
+                        text: "猪肉产业链 38 只评分",
+                        link: "/研究报告/A股猪肉产业链38只股票评分报告"
+                    },
+                    {
                         text: "AI产业链投资策略",
                         link: "/研究报告/2026—2028年A股AI产业链投资策略与错杀股研究报告"
                     }
@@ -58,6 +70,18 @@ export default defineConfig({
                         {
                             text: "2026—2027 年猪周期投资",
                             link: "/研究报告/2026—2027年A股猪周期投资研究报告"
+                        },
+                        {
+                            text: "潜力股筛选 · ChatGPT",
+                            link: "/研究报告/2027年猪周期潜力股筛选报告-ChatGPT"
+                        },
+                        {
+                            text: "潜力股筛选 · Deepseek",
+                            link: "/研究报告/2027年猪周期潜力股筛选报告-Deepseek"
+                        },
+                        {
+                            text: "猪肉产业链 38 只评分",
+                            link: "/研究报告/A股猪肉产业链38只股票评分报告"
                         }
                     ]
                 },
