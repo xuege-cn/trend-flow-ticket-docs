@@ -3,7 +3,7 @@ import { defineConfig } from "vitepress";
 export default defineConfig({
     lang: "zh-CN",
     title: "个人知识库",
-    description: "投资理财笔记与广进计划话术",
+    description: "投资理财笔记、研究报告与广进计划话术",
     base: process.env.BASE_PATH ?? "/",
     cleanUrls: true,
     lastUpdated: true,
@@ -17,6 +17,24 @@ export default defineConfig({
                 ]
             },
             {
+                text: "研究报告",
+                items: [
+                    { text: "报告总览", link: "/研究报告/" },
+                    {
+                        text: "生猪反转周期",
+                        link: "/研究报告/2027年中国生猪反转周期研究报告"
+                    },
+                    {
+                        text: "猪周期投资研究",
+                        link: "/研究报告/2026—2027年A股猪周期投资研究报告"
+                    },
+                    {
+                        text: "AI产业链投资策略",
+                        link: "/研究报告/2026—2028年A股AI产业链投资策略与错杀股研究报告"
+                    }
+                ]
+            },
+            {
                 text: "广进计划",
                 items: [
                     { text: "话术总览", link: "/广进计划/" },
@@ -25,6 +43,34 @@ export default defineConfig({
             }
         ],
         sidebar: {
+            "/研究报告/": [
+                {
+                    text: "研究报告 · 总览",
+                    items: [{ text: "总览", link: "/研究报告/" }]
+                },
+                {
+                    text: "生猪 / 猪周期",
+                    items: [
+                        {
+                            text: "2027 年生猪反转周期",
+                            link: "/研究报告/2027年中国生猪反转周期研究报告"
+                        },
+                        {
+                            text: "2026—2027 年猪周期投资",
+                            link: "/研究报告/2026—2027年A股猪周期投资研究报告"
+                        }
+                    ]
+                },
+                {
+                    text: "AI 产业链",
+                    items: [
+                        {
+                            text: "2026—2028 年 AI 投资策略",
+                            link: "/研究报告/2026—2028年A股AI产业链投资策略与错杀股研究报告"
+                        }
+                    ]
+                }
+            ],
             "/广进计划/": [
                 {
                     text: "广进计划 · 话术",
