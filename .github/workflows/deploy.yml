@@ -15,10 +15,7 @@ concurrency:
     cancel-in-progress: true
 
 jobs:
-    deploy:
-        environment:
-            name: github-pages
-            url: ${{ steps.deployment.outputs.page_url }}
+    build:
         runs-on: ubuntu-latest
         steps:
             - name: Checkout
@@ -41,14 +38,18 @@ jobs:
                   BASE_PATH: /${{ github.event.repository.name }}/
               run: pnpm build
 
-            - name: Configure GitHub Pages
-              uses: actions/configure-pages@v5
-
             - name: Upload site
-              uses: actions/upload-pages-artifact@v3
+              uses: actions/upload-pages-artifact@v4
               with:
                   path: .vitepress/dist
 
+    deploy:
+        needs: build
+        environment:
+            name: github-pages
+            url: ${{ steps.deployment.outputs.page_url }}
+        runs-on: ubuntu-latest
+        steps:
             - name: Deploy
               id: deployment
               uses: actions/deploy-pages@v4
