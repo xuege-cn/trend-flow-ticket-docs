@@ -3,7 +3,7 @@ import { defineConfig } from "vitepress";
 export default defineConfig({
     lang: "zh-CN",
     title: "个人知识库",
-    description: "投资理财笔记、研究报告与广进计划话术",
+    description: "投资理财笔记、研究报告、复盘与广进计划话术",
     base: process.env.BASE_PATH ?? "/",
     cleanUrls: true,
     lastUpdated: true,
@@ -59,6 +59,16 @@ export default defineConfig({
                     {
                         text: "AI产业链投资策略",
                         link: "/研究报告/2026—2028年A股AI产业链投资策略与错杀股研究报告"
+                    }
+                ]
+            },
+            {
+                text: "复盘",
+                items: [
+                    { text: "复盘总览", link: "/复盘/" },
+                    {
+                        text: "文投控股逻辑证伪",
+                        link: "/复盘/文投控股逻辑证伪"
                     }
                 ]
             },
@@ -244,6 +254,21 @@ export default defineConfig({
                         {
                             text: "我是否有义务对合同条款保密",
                             link: "/广进计划/我是否有义务对合同条款保密"
+                        }
+                    ]
+                }
+            ],
+            "/复盘/": [
+                {
+                    text: "复盘 · 总览",
+                    items: [{ text: "总览", link: "/复盘/" }]
+                },
+                {
+                    text: "个股复盘",
+                    items: [
+                        {
+                            text: "文投控股逻辑证伪",
+                            link: "/复盘/文投控股逻辑证伪"
                         }
                     ]
                 }
