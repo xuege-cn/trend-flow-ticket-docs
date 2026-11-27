@@ -13,6 +13,10 @@ export default defineConfig({
                 text: "投资理财",
                 items: [
                     { text: "笔记总览", link: "/投资理财/" },
+                    {
+                        text: "选股买入时间节点",
+                        link: "/投资理财/选股买入时间节点"
+                    },
                     { text: "量化模型", link: "/量化模型/量化模型" }
                 ]
             },
@@ -59,6 +63,10 @@ export default defineConfig({
                     {
                         text: "AI产业链投资策略",
                         link: "/研究报告/2026—2028年A股AI产业链投资策略与错杀股研究报告"
+                    },
+                    {
+                        text: "AI产业链投资备忘录",
+                        link: "/研究报告/A股AI产业链投资研究报告"
                     }
                 ]
             },
@@ -138,6 +146,10 @@ export default defineConfig({
                         {
                             text: "2026—2028 年 AI 投资策略",
                             link: "/研究报告/2026—2028年A股AI产业链投资策略与错杀股研究报告"
+                        },
+                        {
+                            text: "AI 产业链投资备忘录",
+                            link: "/研究报告/A股AI产业链投资研究报告"
                         }
                     ]
                 }
@@ -314,6 +326,10 @@ export default defineConfig({
                         {
                             text: "如何做波段",
                             link: "/投资理财/如何做波段"
+                        },
+                        {
+                            text: "选股买入时间节点",
+                            link: "/投资理财/选股买入时间节点"
                         }
                     ]
                 },
