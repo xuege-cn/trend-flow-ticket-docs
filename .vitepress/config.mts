@@ -161,7 +161,7 @@ export default defineConfig({
                     text: "连板周期",
                     items: [
                         {
-                            text: "连板周期频次（五年）",
+                            text: "连板周期频次（龙洲式）",
                             link: "/研究报告/连板周期频次研究报告"
                         }
                     ]
