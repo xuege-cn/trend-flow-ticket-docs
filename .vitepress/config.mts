@@ -67,6 +67,10 @@ export default defineConfig({
                     {
                         text: "AI产业链投资备忘录",
                         link: "/研究报告/A股AI产业链投资研究报告"
+                    },
+                    {
+                        text: "连板周期频次",
+                        link: "/研究报告/连板周期频次研究报告"
                     }
                 ]
             },
@@ -150,6 +154,15 @@ export default defineConfig({
                         {
                             text: "AI 产业链投资备忘录",
                             link: "/研究报告/A股AI产业链投资研究报告"
+                        }
+                    ]
+                },
+                {
+                    text: "连板周期",
+                    items: [
+                        {
+                            text: "连板周期频次（五年）",
+                            link: "/研究报告/连板周期频次研究报告"
                         }
                     ]
                 }
